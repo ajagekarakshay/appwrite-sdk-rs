@@ -277,11 +277,6 @@ This SDK covers all major Appwrite services:
 - ✅ **Account** - User authentication and management
 - ✅ **Databases** - Document database with queries
 - ✅ **Storage** - File storage with transformations
-- 🚧 **Functions** - Serverless functions (coming soon)
-- 🚧 **Messaging** - Email, SMS, push notifications (coming soon)
-- 🚧 **Teams** - Team and membership management (coming soon)
-- 🚧 **Avatars** - Avatar generation (coming soon)
-- 🚧 **Locale** - Localization helpers (coming soon)
 
 ## Requirements
 
