@@ -1,0 +1,45 @@
+[package]
+name = "appwrite-rs"
+version = "0.1.0"
+authors = ["Appwrite Team <team@appwrite.io>"]
+description = "Rust SDK for Appwrite - an open-source backend-as-a-service platform"
+license = "BSD-3-Clause"
+repository = "https://github.com/appwrite/sdk-for-rust"
+homepage = "https://appwrite.io"
+documentation = "https://docs.rs/appwrite-rs"
+keywords = ["appwrite", "backend", "baas", "api", "sdk"]
+categories = ["api-bindings", "web-programming::http-client"]
+edition = "2021"
+rust-version = "1.70"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json", "multipart", "stream"] }
+thiserror = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+uuid = { version = "1.0", features = ["v4"] }
+mime = "0.3"
+url = "2.4"
+base64 = "0.22"
+bytes = "1.5"
+mime_guess = "2.0"
+
+[dev-dependencies]
+tokio-test = "0.4"
+
+[lib]
+name = "appwrite"
+path = "src/lib.rs"
+
+[[example]]
+name = "account"
+path = "examples/account.rs"
+
+[[example]]
+name = "databases"
+path = "examples/databases.rs"
+
+[[example]]
+name = "storage"
+path = "examples/storage.rs"
